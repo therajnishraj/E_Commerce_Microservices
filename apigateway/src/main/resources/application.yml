@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://USERAPP  # Load balancer to route to userapp
+          predicates:
+            - Path=/users/**
+        - id: order-service
+          uri: lb://ORDERAPP
+          predicates:
+            - Path=/orders/**
+
+  discovery:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/  # Eureka service URL
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web.reactive.function.client: DEBUG

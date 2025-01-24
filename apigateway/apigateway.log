@@ -1,0 +1,356 @@
+2025-01-24T15:31:51.535+05:30  INFO 231680 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 231680 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T15:31:51.542+05:30  INFO 231680 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T15:31:52.504+05:30  INFO 231680 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T15:31:53.465+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T15:31:53.465+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T15:31:53.465+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T15:31:53.466+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T15:31:53.467+05:30  INFO 231680 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T15:31:53.878+05:30  INFO 231680 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T15:31:54.101+05:30  INFO 231680 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.48 seconds (process running for 4.394)
+2025-01-24T15:32:53.805+05:30  INFO 231680 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T15:32:53.807+05:30  INFO 231680 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T15:32:57.915+05:30  INFO 231905 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 231905 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T15:32:57.917+05:30  INFO 231905 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T15:32:58.918+05:30  INFO 231905 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T15:32:59.825+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T15:32:59.825+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T15:32:59.825+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T15:32:59.826+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T15:32:59.827+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T15:32:59.827+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T15:32:59.827+05:30  INFO 231905 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T15:33:00.297+05:30  INFO 231905 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T15:33:00.382+05:30  INFO 231905 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.348 seconds (process running for 4.269)
+2025-01-24T16:15:39.475+05:30  INFO 231905 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T16:15:39.478+05:30  INFO 231905 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T16:15:43.298+05:30  INFO 236322 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 236322 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T16:15:43.304+05:30  INFO 236322 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T16:15:44.255+05:30  INFO 236322 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T16:15:45.225+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T16:15:45.225+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T16:15:45.226+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T16:15:45.227+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T16:15:45.227+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T16:15:45.227+05:30  INFO 236322 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T16:15:45.637+05:30  INFO 236322 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T16:15:45.708+05:30  INFO 236322 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T16:15:45.709+05:30  INFO 236322 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.213 seconds (process running for 3.967)
+2025-01-24T16:15:45.711+05:30  INFO 236322 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T16:15:50.499+05:30  INFO 236398 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 236398 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T16:15:50.507+05:30  INFO 236398 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T16:15:51.492+05:30  INFO 236398 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T16:15:52.441+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T16:15:52.441+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T16:15:52.441+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T16:15:52.442+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T16:15:52.442+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T16:15:52.442+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T16:15:52.443+05:30  INFO 236398 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T16:15:52.869+05:30  INFO 236398 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T16:15:52.954+05:30  INFO 236398 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.485 seconds (process running for 4.42)
+2025-01-24T16:16:00.515+05:30  INFO 236398 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T16:16:00.518+05:30  INFO 236398 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T16:16:17.137+05:30  INFO 236525 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 236525 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T16:16:17.143+05:30  INFO 236525 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T16:16:18.093+05:30  INFO 236525 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T16:16:19.000+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T16:16:19.001+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T16:16:19.001+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T16:16:19.002+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T16:16:19.003+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T16:16:19.003+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T16:16:19.003+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T16:16:19.003+05:30  INFO 236525 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T16:16:19.414+05:30  INFO 236525 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T16:16:19.502+05:30  INFO 236525 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.26 seconds (process running for 4.209)
+2025-01-24T16:23:24.194+05:30  INFO 236525 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T16:23:24.199+05:30  INFO 236525 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T16:23:28.742+05:30  INFO 237598 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 237598 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T16:23:28.751+05:30  INFO 237598 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T16:23:29.720+05:30  INFO 237598 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T16:23:30.689+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T16:23:30.690+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T16:23:30.691+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T16:23:30.692+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T16:23:30.693+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T16:23:30.693+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T16:23:30.693+05:30  INFO 237598 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T16:23:31.143+05:30  INFO 237598 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T16:23:31.223+05:30  INFO 237598 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.41 seconds (process running for 4.338)
+2025-01-24T16:29:12.449+05:30  INFO 237598 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T16:29:12.453+05:30  INFO 237598 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T16:29:16.774+05:30  INFO 237932 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 237932 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T16:29:16.785+05:30  INFO 237932 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T16:29:17.765+05:30  INFO 237932 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T16:29:18.660+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T16:29:18.660+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T16:29:18.660+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T16:29:18.660+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T16:29:18.661+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T16:29:18.661+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T16:29:18.661+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T16:29:18.662+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T16:29:18.662+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T16:29:18.662+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T16:29:18.662+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T16:29:18.662+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T16:29:18.662+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T16:29:18.663+05:30  INFO 237932 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T16:29:19.055+05:30  INFO 237932 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T16:29:19.136+05:30  INFO 237932 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.195 seconds (process running for 4.094)
+2025-01-24T16:44:28.287+05:30  INFO 237932 --- [api-gateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T16:44:28.292+05:30  INFO 237932 --- [api-gateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-24T17:13:01.383+05:30  INFO 240626 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 240626 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T17:13:01.389+05:30  INFO 240626 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T17:13:02.362+05:30  INFO 240626 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T17:13:03.058+05:30 DEBUG 240626 --- [api-gateway] [main] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='user-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/users/**}}], filters=[FilterDefinition{name='AddRequestHeader', args={name=X-Request-Id, value=#{T(java.util.UUID).randomUUID().toString()}}}], uri=lb://USERAPP, order=0, metadata={}, enabled=true}, RouteDefinition{id='order-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/orders/**}}], filters=[], uri=lb://ORDERAPP, order=0, metadata={}, enabled=true}]
+2025-01-24T17:13:03.296+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T17:13:03.296+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T17:13:03.297+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T17:13:03.298+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T17:13:03.298+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T17:13:03.298+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T17:13:03.298+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T17:13:03.298+05:30  INFO 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T17:13:03.702+05:30  INFO 240626 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T17:13:03.742+05:30 DEBUG 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition user-service applying {_genkey_0=/users/**} to Path
+2025-01-24T17:13:03.770+05:30 DEBUG 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition user-service applying filter {name=X-Request-Id, value=#{T(java.util.UUID).randomUUID().toString()}} to AddRequestHeader
+2025-01-24T17:13:03.794+05:30 ERROR 240626 --- [api-gateway] [main] o.s.c.gateway.route.CachingRouteLocator  : Refresh routes error !!!
+
+org.springframework.expression.spel.SpelEvaluationException: EL1005E: Type cannot be found 'java.util.UUID'
+	at org.springframework.expression.spel.support.SimpleEvaluationContext.lambda$static$0(SimpleEvaluationContext.java:104) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ExpressionState.findType(ExpressionState.java:182) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.TypeReference.getValueInternal(TypeReference.java:71) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:60) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:273) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.cloud.gateway.support.ShortcutConfigurable.getValue(ShortcutConfigurable.java:72) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.support.ShortcutConfigurable$ShortcutType$1.normalize(ShortcutConfigurable.java:109) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.normalizeProperties(ConfigurationService.java:141) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:241) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.loadGatewayFilters(RouteDefinitionRouteLocator.java:159) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.getFilters(RouteDefinitionRouteLocator.java:192) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:132) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:492) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:424) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:439) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerNext(FluxMergeSequential.java:304) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onNext(FluxMergeSequential.java:578) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.tryOnNext(FluxFilterFuseable.java:148) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.slowPath(FluxIterable.java:664) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.request(FluxIterable.java:623) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onSubscribe(FluxMergeSequential.java:571) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:179) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4642) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4542) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4478) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4450) ~[reactor-core-3.7.2.jar:3.7.2]
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:98) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:42) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:78) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:55) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1009) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.microservice.apigateway.ApigatewayApplication.main(ApigatewayApplication.java:12) ~[classes/:na]
+
+2025-01-24T17:13:03.801+05:30 DEBUG 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition user-service applying {_genkey_0=/users/**} to Path
+2025-01-24T17:13:03.804+05:30 DEBUG 240626 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition user-service applying filter {name=X-Request-Id, value=#{T(java.util.UUID).randomUUID().toString()}} to AddRequestHeader
+2025-01-24T17:13:03.805+05:30  WARN 240626 --- [api-gateway] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.expression.spel.SpelEvaluationException: EL1005E: Type cannot be found 'java.util.UUID'
+2025-01-24T17:13:03.812+05:30  INFO 240626 --- [api-gateway] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-24T17:13:03.833+05:30 ERROR 240626 --- [api-gateway] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.expression.spel.SpelEvaluationException: EL1005E: Type cannot be found 'java.util.UUID'
+	at org.springframework.expression.spel.support.SimpleEvaluationContext.lambda$static$0(SimpleEvaluationContext.java:104) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ExpressionState.findType(ExpressionState.java:182) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.TypeReference.getValueInternal(TypeReference.java:71) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:60) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:96) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:273) ~[spring-expression-6.2.2.jar:6.2.2]
+	at org.springframework.cloud.gateway.support.ShortcutConfigurable.getValue(ShortcutConfigurable.java:72) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.support.ShortcutConfigurable$ShortcutType$1.normalize(ShortcutConfigurable.java:109) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.support.ConfigurationService$ConfigurableBuilder.normalizeProperties(ConfigurationService.java:141) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.support.ConfigurationService$AbstractBuilder.bind(ConfigurationService.java:241) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.loadGatewayFilters(RouteDefinitionRouteLocator.java:159) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.getFilters(RouteDefinitionRouteLocator.java:192) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator.convertToRoute(RouteDefinitionRouteLocator.java:132) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:492) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:424) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.drain(FluxMergeSequential.java:439) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.innerNext(FluxMergeSequential.java:304) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onNext(FluxMergeSequential.java:578) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.tryOnNext(FluxFilterFuseable.java:148) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.slowPath(FluxIterable.java:664) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.request(FluxIterable.java:623) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialInner.onSubscribe(FluxMergeSequential.java:571) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:179) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:237) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:198) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891) ~[reactor-core-3.7.2.jar:3.7.2]
+	at reactor.core.publisher.Flux.blockLast(Flux.java:2816) ~[reactor-core-3.7.2.jar:3.7.2]
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.lambda$onApplicationEvent$3(WeightCalculatorWebFilter.java:156) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2403) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.onApplicationEvent(WeightCalculatorWebFilter.java:156) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:78) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:55) ~[spring-cloud-gateway-server-4.2.0.jar:4.2.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1009) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.microservice.apigateway.ApigatewayApplication.main(ApigatewayApplication.java:12) ~[classes/:na]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.7.2.jar:3.7.2]
+		at reactor.core.publisher.Flux.blockLast(Flux.java:2817) ~[reactor-core-3.7.2.jar:3.7.2]
+		... 24 common frames omitted
+
+2025-01-24T17:14:18.926+05:30  INFO 240764 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 22.0.1 with PID 240764 (/home/rajnish/Desktop/Microservices/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/Microservices/apigateway)
+2025-01-24T17:14:18.932+05:30  INFO 240764 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-24T17:14:19.978+05:30  INFO 240764 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1e6ee0da-ffd8-3187-9307-2c8f1fc6964d
+2025-01-24T17:14:20.684+05:30 DEBUG 240764 --- [api-gateway] [main] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='user-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/users/**}}], filters=[], uri=lb://USERAPP, order=0, metadata={}, enabled=true}, RouteDefinition{id='order-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/orders/**}}], filters=[], uri=lb://ORDERAPP, order=0, metadata={}, enabled=true}]
+2025-01-24T17:14:20.931+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-24T17:14:20.932+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-24T17:14:20.933+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-24T17:14:20.933+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-24T17:14:20.934+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-24T17:14:20.934+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-24T17:14:20.934+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-24T17:14:20.935+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-24T17:14:20.935+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-24T17:14:20.936+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-24T17:14:20.936+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-24T17:14:20.936+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-24T17:14:20.936+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-24T17:14:20.937+05:30  INFO 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-24T17:14:21.364+05:30  INFO 240764 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-24T17:14:21.403+05:30 DEBUG 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition user-service applying {_genkey_0=/users/**} to Path
+2025-01-24T17:14:21.429+05:30 DEBUG 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: user-service
+2025-01-24T17:14:21.429+05:30 DEBUG 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/orders/**} to Path
+2025-01-24T17:14:21.431+05:30 DEBUG 240764 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2025-01-24T17:14:21.446+05:30  INFO 240764 --- [api-gateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 3.417 seconds (process running for 4.284)
+2025-01-24T17:14:28.882+05:30 DEBUG 240764 --- [api-gateway] [reactor-http-epoll-3] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: user-service
+2025-01-24T17:14:28.883+05:30 DEBUG 240764 --- [api-gateway] [reactor-http-epoll-3] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8080/users/getAllUser] to Route{id='user-service', uri=lb://USERAPP, order=0, predicate=Paths: [/users/**], match trailing slash: true, gatewayFilters=[], metadata={}}
+2025-01-24T17:14:28.884+05:30 DEBUG 240764 --- [api-gateway] [reactor-http-epoll-3] o.s.c.g.h.RoutePredicateHandlerMapping   : [74627328-1] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@43471a7e
+2025-01-24T17:14:28.889+05:30 DEBUG 240764 --- [api-gateway] [reactor-http-epoll-3] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@39b626e5}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@3f9b7fe1}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@515b9d4a}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@23cd5d42}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@32a4ecbe}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.config.GatewayNoLoadBalancerClientAutoConfiguration$NoLoadBalancerClientFilter@3e900e1a}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@2b44d6d0}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@2d7637e6}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@2e71240b}, order = 2147483647]]
+2025-01-24T17:19:20.188+05:30  INFO 240764 --- [api-gateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24T17:19:20.197+05:30  INFO 240764 --- [api-gateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
