@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: orderapp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        failure-rate-threshold: 50 # Percentage of failures allowed before tripping the circuit
+        wait-duration-in-open-state: 10s # Time before retrying after circuit is open
+        sliding-window-type: COUNT_BASED # COUNT_BASED or TIME_BASED
+        sliding-window-size: 10 # Number of calls to consider for the circuit
+        minimum-number-of-calls: 5 # Minimum calls before circuit is evaluated
+    instances:
+      userServiceCircuitBreaker: # Name of the circuit breaker instance
+        base-config: default

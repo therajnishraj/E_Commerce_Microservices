@@ -4,8 +4,11 @@ import com.microservice.orderapp.client.UserServiceClient;
 import com.microservice.orderapp.model.Order;
 import com.microservice.orderapp.model.User;
 import com.microservice.orderapp.service.OrderService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/orders")
@@ -27,9 +30,19 @@ public class OrderController {
         return orderService.getOrder(id);
     }
 
+    @GetMapping("/getAllOrders")
+    public List<Order> getAllOrders() {
+        return orderService.getAllOrders();
+    }
+
     @GetMapping("/order/{orderId}/user/{userId}")
+    @CircuitBreaker(name = "userServiceCircuitBreaker", fallbackMethod = "fallbackGetUserDetails")
     public String getOrderAndUserDetails(@PathVariable Long orderId, @PathVariable Long userId) {
-        User user = userServiceClient.getUserById(userId);
+        User user = userServiceClient.getUserById(userId); // Calls UserService
         return "Order ID: " + orderId + " belongs to " + user.getName();
+    }
+
+    public String fallbackGetUserDetails(Long orderId, Long userId, Throwable throwable) {
+        return "Order ID: " + orderId + " belongs to a default user." ;
     }
 }
