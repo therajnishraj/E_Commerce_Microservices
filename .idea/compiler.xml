@@ -11,12 +11,14 @@
         <module name="eurekaserver" />
         <module name="orderapp" />
         <module name="userapp" />
+        <module name="authservice" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="apigateway" options="-parameters" />
+      <module name="authservice" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="orderapp" options="-parameters" />
       <module name="userapp" options="-parameters" />

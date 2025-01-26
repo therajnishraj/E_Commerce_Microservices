@@ -8,10 +8,18 @@ spring:
           uri: lb://USERAPP  # Load balancer to route to userapp
           predicates:
             - Path=/users/**
+          filters:
+            - AuthenticationFilter
         - id: order-service
           uri: lb://ORDERAPP
           predicates:
             - Path=/orders/**
+          filters:
+              - AuthenticationFilter
+        - id: auth-service
+          uri: lb://AUTHSERVICE
+          predicates:
+            - Path=/auth/**
 
   discovery:
     client:
