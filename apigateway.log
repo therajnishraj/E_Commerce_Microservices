@@ -14855,3 +14855,223 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No ser
 2025-01-28T16:56:48.218+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T17:01:48.219+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T17:06:48.219+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:11:48.220+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:16:48.221+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:21:48.222+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:26:48.223+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:31:48.223+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:33:11.328+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
+2025-01-28T17:33:11.329+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738065791329, current=DOWN, previous=UP]
+2025-01-28T17:33:11.332+05:30  INFO 712722 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T17:33:11.339+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-28T17:33:11.356+05:30  INFO 712722 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-28T17:33:11.375+05:30  INFO 712722 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T17:33:13.425+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-28T17:33:16.439+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-28T17:33:16.452+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - deregister  status: 200
+2025-01-28T17:33:16.452+05:30  INFO 712722 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-28T17:33:50.749+05:30  INFO 774690 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 17.0.13 with PID 774690 (/home/rajnish/Desktop/ecart_microservice/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/ecart_microservice)
+2025-01-28T17:33:50.780+05:30  INFO 774690 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-28T17:33:54.488+05:30  INFO 774690 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6eec4b98-35e8-31ef-bb2e-acaeb91fc202
+2025-01-28T17:33:55.934+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-28T17:33:55.942+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-28T17:33:55.949+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-28T17:33:55.950+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-28T17:33:55.958+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-28T17:33:55.959+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-28T17:33:55.960+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-28T17:33:55.961+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-28T17:33:55.963+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-28T17:33:55.963+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-28T17:33:55.963+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-28T17:33:55.963+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-28T17:33:55.963+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-28T17:33:55.963+05:30  INFO 774690 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-28T17:33:56.588+05:30  INFO 774690 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-28T17:33:56.682+05:30  WARN 774690 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-28T17:33:56.732+05:30  INFO 774690 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-28T17:33:56.772+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-28T17:33:56.780+05:30  INFO 774690 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:33:56.802+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-28T17:33:56.805+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-28T17:33:56.806+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-28T17:33:56.806+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-28T17:33:56.807+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-28T17:33:56.807+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-28T17:33:56.807+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-28T17:33:57.490+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-28T17:33:57.494+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-28T17:33:57.497+05:30  INFO 774690 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-28T17:33:57.503+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738065837501 with initial instances count: 3
+2025-01-28T17:33:57.510+05:30  INFO 774690 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2025-01-28T17:33:57.511+05:30  INFO 774690 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738065837511, current=UP, previous=STARTING]
+2025-01-28T17:33:57.519+05:30  INFO 774690 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T17:33:57.633+05:30  INFO 774690 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T17:33:57.866+05:30  INFO 774690 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-28T17:33:57.869+05:30  INFO 774690 --- [apigateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-01-28T17:33:57.923+05:30  INFO 774690 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 9.533 seconds (process running for 11.628)
+2025-01-28T17:37:23.248+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
+2025-01-28T17:37:23.249+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738066043249, current=DOWN, previous=UP]
+2025-01-28T17:37:23.250+05:30  INFO 774690 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T17:37:23.252+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-28T17:37:23.258+05:30  INFO 774690 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T17:37:23.258+05:30  INFO 774690 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-28T17:37:25.283+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-28T17:37:28.283+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-28T17:37:28.285+05:30  WARN 774690 --- [apigateway] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-01-28T17:37:28.307+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - deregister  status: 200
+2025-01-28T17:37:28.308+05:30  INFO 774690 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-28T17:40:06.411+05:30  INFO 775764 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 17.0.13 with PID 775764 (/home/rajnish/Desktop/ecart_microservice/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/ecart_microservice)
+2025-01-28T17:40:06.434+05:30  INFO 775764 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-28T17:40:10.527+05:30  INFO 775764 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6eec4b98-35e8-31ef-bb2e-acaeb91fc202
+2025-01-28T17:40:13.151+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-28T17:40:13.152+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-28T17:40:13.155+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-28T17:40:13.156+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-28T17:40:13.156+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-28T17:40:13.157+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-28T17:40:13.157+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-28T17:40:13.157+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-28T17:40:13.158+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-28T17:40:13.158+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-28T17:40:13.160+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-28T17:40:13.160+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-28T17:40:13.161+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-28T17:40:13.161+05:30  INFO 775764 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-28T17:40:14.051+05:30  INFO 775764 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-28T17:40:14.180+05:30  WARN 775764 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-28T17:40:14.307+05:30  INFO 775764 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-28T17:40:14.357+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-28T17:40:14.367+05:30  INFO 775764 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:40:14.394+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-28T17:40:14.395+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-28T17:40:14.395+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-28T17:40:14.396+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-28T17:40:14.396+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-28T17:40:14.397+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-28T17:40:14.397+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-28T17:40:15.462+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-28T17:40:15.475+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-28T17:40:15.481+05:30  INFO 775764 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-28T17:40:15.484+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738066215483 with initial instances count: 3
+2025-01-28T17:40:15.490+05:30  INFO 775764 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2025-01-28T17:40:15.493+05:30  INFO 775764 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738066215493, current=UP, previous=STARTING]
+2025-01-28T17:40:15.499+05:30  INFO 775764 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T17:40:15.627+05:30  INFO 775764 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T17:40:15.983+05:30  INFO 775764 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-28T17:40:15.987+05:30  INFO 775764 --- [apigateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-01-28T17:40:16.111+05:30  INFO 775764 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 11.165 seconds (process running for 12.561)
+2025-01-28T17:45:14.401+05:30  INFO 775764 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:50:14.402+05:30  INFO 775764 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:55:14.402+05:30  INFO 775764 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:00:14.406+05:30  INFO 775764 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:05:14.407+05:30  INFO 775764 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:06:27.186+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:06:29.323+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:10:14.411+05:30  INFO 775764 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:10:24.974+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:12:29.163+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:12:31.819+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:12:33.808+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:12:35.985+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:12:38.111+05:30  WARN 775764 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T18:14:37.371+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
+2025-01-28T18:14:37.385+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738068277385, current=DOWN, previous=UP]
+2025-01-28T18:14:37.397+05:30  INFO 775764 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T18:14:37.432+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-28T18:14:37.475+05:30  INFO 775764 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-28T18:14:37.479+05:30  INFO 775764 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T18:14:39.530+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-28T18:14:42.534+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-28T18:14:42.545+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - deregister  status: 200
+2025-01-28T18:14:42.546+05:30  INFO 775764 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-28T18:14:46.444+05:30  INFO 780566 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 17.0.13 with PID 780566 (/home/rajnish/Desktop/ecart_microservice/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/ecart_microservice)
+2025-01-28T18:14:46.458+05:30  INFO 780566 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-28T18:14:48.802+05:30  INFO 780566 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6eec4b98-35e8-31ef-bb2e-acaeb91fc202
+2025-01-28T18:14:50.220+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-28T18:14:50.221+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-28T18:14:50.221+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-28T18:14:50.222+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-28T18:14:50.222+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-28T18:14:50.222+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-28T18:14:50.222+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-28T18:14:50.222+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-28T18:14:50.223+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-28T18:14:50.223+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-28T18:14:50.223+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-28T18:14:50.223+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-28T18:14:50.223+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-28T18:14:50.223+05:30  INFO 780566 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-28T18:14:50.834+05:30  INFO 780566 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-28T18:14:50.909+05:30  WARN 780566 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-28T18:14:50.966+05:30  INFO 780566 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-28T18:14:50.998+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-28T18:14:51.003+05:30  INFO 780566 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:14:51.024+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-28T18:14:51.025+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-28T18:14:51.025+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-28T18:14:51.025+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-28T18:14:51.025+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-28T18:14:51.025+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-28T18:14:51.025+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-28T18:14:52.211+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-28T18:14:52.221+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-28T18:14:52.226+05:30  INFO 780566 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-28T18:14:52.244+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738068292228 with initial instances count: 3
+2025-01-28T18:14:52.261+05:30  INFO 780566 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2025-01-28T18:14:52.265+05:30  INFO 780566 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738068292265, current=UP, previous=STARTING]
+2025-01-28T18:14:52.279+05:30  INFO 780566 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T18:14:52.434+05:30  INFO 780566 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T18:14:52.876+05:30  INFO 780566 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-28T18:14:52.880+05:30  INFO 780566 --- [apigateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-01-28T18:14:52.969+05:30  INFO 780566 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 7.787 seconds (process running for 9.089)
+2025-01-28T18:18:07.058+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
+2025-01-28T18:18:07.065+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738068487065, current=DOWN, previous=UP]
+2025-01-28T18:18:07.067+05:30  INFO 780566 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T18:18:07.081+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-28T18:18:07.089+05:30  INFO 780566 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T18:18:07.096+05:30  INFO 780566 --- [apigateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-01-28T18:18:09.124+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-01-28T18:18:12.127+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-01-28T18:18:12.135+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - deregister  status: 200
+2025-01-28T18:18:12.139+05:30  INFO 780566 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-01-28T18:18:17.649+05:30  INFO 781007 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 17.0.13 with PID 781007 (/home/rajnish/Desktop/ecart_microservice/apigateway/target/classes started by rajnish in /home/rajnish/Desktop/ecart_microservice)
+2025-01-28T18:18:17.663+05:30  INFO 781007 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-28T18:18:20.750+05:30  INFO 781007 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6eec4b98-35e8-31ef-bb2e-acaeb91fc202
+2025-01-28T18:18:22.406+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-28T18:18:22.408+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-28T18:18:22.419+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-28T18:18:22.428+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-28T18:18:22.435+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-28T18:18:22.436+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-28T18:18:22.436+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-28T18:18:22.437+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-28T18:18:22.438+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-28T18:18:22.441+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-28T18:18:22.442+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-28T18:18:22.443+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-28T18:18:22.444+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-28T18:18:22.446+05:30  INFO 781007 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-28T18:18:23.218+05:30  INFO 781007 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-28T18:18:23.322+05:30  WARN 781007 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-28T18:18:23.432+05:30  INFO 781007 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-28T18:18:23.468+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-28T18:18:23.480+05:30  INFO 781007 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:18:23.493+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-28T18:18:23.494+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-28T18:18:23.494+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-28T18:18:23.494+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-28T18:18:23.494+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-28T18:18:23.495+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-28T18:18:23.495+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-28T18:18:24.132+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-28T18:18:24.145+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-28T18:18:24.152+05:30  INFO 781007 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-28T18:18:24.155+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738068504154 with initial instances count: 4
+2025-01-28T18:18:24.161+05:30  INFO 781007 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2025-01-28T18:18:24.162+05:30  INFO 781007 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738068504162, current=UP, previous=STARTING]
+2025-01-28T18:18:24.165+05:30  INFO 781007 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080: registering service...
+2025-01-28T18:18:24.286+05:30  INFO 781007 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.3.44:apigateway:8080 - registration status: 204
+2025-01-28T18:18:24.572+05:30  INFO 781007 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-28T18:18:24.577+05:30  INFO 781007 --- [apigateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-01-28T18:18:24.628+05:30  INFO 781007 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 8.394 seconds (process running for 10.595)

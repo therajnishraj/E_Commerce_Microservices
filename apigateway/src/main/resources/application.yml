@@ -7,13 +7,11 @@ spring:
           predicates:
             - Path=/users/**
           filters:
-            - AuthenticationFilter
-            - name: CircuitBreaker
+            - AuthenticationFilter #AuthenticationFilter for check token is valid or not
+            - name: CircuitBreaker #CircuitBreaker for handle request if user microservice is down
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
-                filters:
-                  - RouteIdFallbackFilter # Custom filter to set routeId dynamically
         - id: order-service
           uri: lb://ORDERAPP
           predicates:
@@ -24,8 +22,6 @@ spring:
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
-                filters:
-                  - RouteIdFallbackFilter # Custom filter to set routeId dynamically
         - id: auth-service
           uri: lb://AUTHSERVICE
           predicates:
@@ -36,5 +32,4 @@ spring:
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
-                filters:
-                  - RouteIdFallbackFilter # Custom filter to set routeId dynamically
+

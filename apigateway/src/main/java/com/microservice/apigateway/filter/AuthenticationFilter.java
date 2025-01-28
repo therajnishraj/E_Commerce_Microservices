@@ -51,10 +51,6 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
             }
             Route route=exchange.getAttribute("org.springframework.cloud.gateway.support.ServerWebExchangeUtils.gatewayRoute");
             exchange.getAttributes().put("routeId", route.getId());
-     /*       exchange.getRequest().mutate()
-                    .header(HttpHeaders.AUTHORIZATION, "Bearer " + authHeader) // Set token for microservice
-                    .build();
-*/
             return chain.filter(exchange);
         };
     }
