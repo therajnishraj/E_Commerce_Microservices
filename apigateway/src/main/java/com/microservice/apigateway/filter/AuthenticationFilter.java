@@ -4,6 +4,8 @@ import com.microservice.apigateway.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+import org.springframework.cloud.gateway.route.Route;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpResponse;
@@ -20,6 +22,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
     @Autowired
     private JwtUtil jwtUtil;
 
+
     public AuthenticationFilter() {
         super(Config.class);
     }
@@ -27,13 +30,13 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
     @Override
     public GatewayFilter apply(Config config) {
         return (exchange, chain) -> {
+            String authHeader = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
             if (validator.isSecured.test(exchange.getRequest())) {
                 // Check for Authorization header
                 if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
                     return handleError(exchange, "Missing Authorization header", HttpStatus.UNAUTHORIZED);
                 }
 
-                String authHeader = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
                 if (authHeader != null && authHeader.startsWith("Bearer ")) {
                     authHeader = authHeader.substring(7); // Extract token
                 } else {
@@ -41,12 +44,17 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                 }
 
                 try {
-                    // Validate the token using JwtUtil
                     jwtUtil.validateToken(authHeader);
                 } catch (Exception e) {
                     return handleError(exchange, "Invalid token: " + e.getMessage(), HttpStatus.UNAUTHORIZED);
                 }
             }
+            Route route=exchange.getAttribute("org.springframework.cloud.gateway.support.ServerWebExchangeUtils.gatewayRoute");
+            exchange.getAttributes().put("routeId", route.getId());
+            exchange.getRequest().mutate()
+                    .header(HttpHeaders.AUTHORIZATION, "Bearer " + authHeader) // Set token for microservice
+                    .build();
+
             return chain.filter(exchange);
         };
     }

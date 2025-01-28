@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: AUTH-SERVICE
 
 eureka:
   client:
@@ -9,4 +6,4 @@ eureka:
 
 
 server:
-  port: 9898
+  port: 9090
