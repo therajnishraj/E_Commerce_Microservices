@@ -96,7 +96,10 @@
 			<version>0.11.5</version> <!-- Jackson integration (for deserialization) -->
 		</dependency>
 
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

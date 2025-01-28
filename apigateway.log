@@ -15083,3 +15083,45 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No ser
 2025-01-28T18:48:23.507+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T18:53:23.508+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T18:58:23.513+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T23:27:29.802+05:30  INFO 8090 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Starting ApigatewayApplication using Java 17.0.5 with PID 8090 (/home/raj/Documents/Ekart_Micro_28_01_2025/apigateway/target/classes started by raj in /home/raj/Documents/Ekart_Micro_28_01_2025)
+2025-01-28T23:27:29.809+05:30  INFO 8090 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-01-28T23:27:33.600+05:30  INFO 8090 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6eec4b98-35e8-31ef-bb2e-acaeb91fc202
+2025-01-28T23:27:35.511+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-01-28T23:27:35.512+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-01-28T23:27:35.515+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-01-28T23:27:35.516+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-01-28T23:27:35.517+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-01-28T23:27:35.517+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-01-28T23:27:35.518+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-01-28T23:27:35.519+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-01-28T23:27:35.521+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-01-28T23:27:35.522+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-01-28T23:27:35.522+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-01-28T23:27:35.522+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-01-28T23:27:35.523+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-01-28T23:27:35.525+05:30  INFO 8090 --- [apigateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-01-28T23:27:36.220+05:30  INFO 8090 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-01-28T23:27:36.350+05:30  WARN 8090 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-01-28T23:27:36.467+05:30  INFO 8090 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-01-28T23:27:36.527+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-01-28T23:27:36.537+05:30  INFO 8090 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T23:27:36.556+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-01-28T23:27:36.556+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-01-28T23:27:36.556+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-01-28T23:27:36.557+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-01-28T23:27:36.557+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-01-28T23:27:36.557+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-01-28T23:27:36.558+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-01-28T23:27:37.422+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-01-28T23:27:37.426+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-01-28T23:27:37.430+05:30  INFO 8090 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-01-28T23:27:37.434+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1738087057433 with initial instances count: 1
+2025-01-28T23:27:37.441+05:30  INFO 8090 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2025-01-28T23:27:37.442+05:30  INFO 8090 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1738087057442, current=UP, previous=STARTING]
+2025-01-28T23:27:37.446+05:30  INFO 8090 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.43.132:apigateway:8080: registering service...
+2025-01-28T23:27:37.705+05:30  INFO 8090 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/192.168.43.132:apigateway:8080 - registration status: 204
+2025-01-28T23:27:38.324+05:30  INFO 8090 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-01-28T23:27:38.337+05:30  INFO 8090 --- [apigateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-01-28T23:27:38.513+05:30  INFO 8090 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 11.028 seconds (process running for 14.796)
+2025-01-28T23:32:36.563+05:30  INFO 8090 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T23:37:36.576+05:30  INFO 8090 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
