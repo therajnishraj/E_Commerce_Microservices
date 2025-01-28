@@ -14787,3 +14787,46 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No ser
 2025-01-28T11:31:38.000+05:30  WARN 712722 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
 2025-01-28T11:31:48.034+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T11:32:01.239+05:30  WARN 712722 --- [apigateway] [reactor-http-epoll-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T11:36:48.035+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T11:41:48.036+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T11:46:48.037+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T11:51:48.038+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T11:56:48.039+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:01:48.041+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:06:48.042+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:11:48.048+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:16:48.048+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:21:48.049+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:26:48.050+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:31:48.051+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:36:48.054+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:41:48.057+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:46:48.058+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:51:48.059+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T12:56:48.063+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:01:48.064+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:06:48.065+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:11:48.066+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:15:04.112+05:30  WARN 712722 --- [apigateway] [reactor-http-epoll-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: ORDERAPP
+2025-01-28T13:16:48.067+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:21:48.070+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:26:48.071+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:31:48.072+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:36:48.072+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:41:48.074+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:46:48.074+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:51:48.076+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T13:56:48.082+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:01:48.093+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:06:48.094+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:11:48.095+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:16:48.098+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:21:48.101+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:26:48.104+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:31:48.109+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:36:48.112+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:41:48.114+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:46:48.115+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:51:48.118+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T14:56:48.120+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T15:01:48.121+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
