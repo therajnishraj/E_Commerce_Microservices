@@ -1,17 +1,51 @@
-# Microservices Project
+# E-Commerce Microservices Architecture
 
 This repository contains a microservices-based application. It includes multiple services that interact with each other via REST APIs and are registered with Eureka Service Discovery. The API Gateway routes requests to the respective microservices.
 
----
+## Architecture Overview
+
+This application is designed using Spring Boot Microservices and includes the following components:
+
+- **Authentication Service**: Handles user authentication and generates JWT tokens.
+- **User Service**: Manages user-related operations such as user registration, profile management, etc.
+- **Order Service**: Manages order creation, transactions, and processing.
+- **API Gateway**: Acts as a single entry point, routing requests to the respective microservices while validating authentication tokens.
+- **Eureka Server**: Service discovery mechanism that allows services to register and communicate dynamically.
+
+## Workflow
+
+1. Client sends a request to the API Gateway.
+2. If authentication is required, the API Gateway forwards the credentials to the Auth Service for validation.
+3. Once validated, the Auth Service generates a JWT token and returns it to the client.
+4. The client includes the JWT token in subsequent requests.
+5. The API Gateway checks the token before forwarding requests to respective services:
+    - **User Service**: If the request is user-related.
+    - **Order Service**: If the request is order-related.
+6. If a service is down, a fallback method is triggered to handle the failure gracefully.
+## Architecture Diagram
+
+![Ecart Architecture Diagram](https://github.com/therajnishraj/Microservices/blob/main/ecart_diagram.jpeg)
+
+
+## Microservices Communication
+
+- Each microservice registers with **Eureka Server**, allowing dynamic service discovery.
+- **API Gateway** routes traffic, ensuring seamless communication.
+- Filters (such as authentication and request validation) are applied before forwarding requests to the services.
+
+## Technology Stack
+
+- **Spring Boot**: Microservices Framework
+- **Spring Cloud Gateway**: API Gateway
+- **Spring Security & JWT**: Authentication
+- **Spring Cloud Eureka**: Service Discovery
+- **PostgreSQL**: Database
+- **Feign Client**: Inter-Service Communication
+- **Resilience4j**: Circuit Breaker & Fallback Handling
+
 
 ## Project Structure
 
-### Services
-- **Auth Service**: Handles user registration, authentication, and JWT token generation.
-- **User Service**: Handles user-related operations.
-- **Order Service**: Manages orders and transactions.
-- **Eureka Server**: Service discovery for all microservices.
-- **API Gateway**: Routes client requests to appropriate microservices.
 
 ---
 
@@ -206,6 +240,8 @@ logging:
 ```
 
 ---
+
+
 
 ## API Endpoints
 
