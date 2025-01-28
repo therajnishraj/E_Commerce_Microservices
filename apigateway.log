@@ -14850,3 +14850,7 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No ser
 2025-01-28T16:31:48.193+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T16:36:48.210+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2025-01-28T16:41:48.214+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T16:46:48.215+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T16:51:48.217+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T16:56:48.218+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T17:01:48.219+05:30  INFO 712722 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
