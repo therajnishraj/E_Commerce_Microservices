@@ -15075,3 +15075,11 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No ser
 2025-01-28T18:18:24.572+05:30  INFO 781007 --- [apigateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
 2025-01-28T18:18:24.577+05:30  INFO 781007 --- [apigateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
 2025-01-28T18:18:24.628+05:30  INFO 781007 --- [apigateway] [main] c.m.apigateway.ApigatewayApplication     : Started ApigatewayApplication in 8.394 seconds (process running for 10.595)
+2025-01-28T18:23:23.499+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:28:23.501+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:33:23.503+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:38:23.504+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:43:23.506+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:48:23.507+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:53:23.508+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-01-28T18:58:23.513+05:30  INFO 781007 --- [apigateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

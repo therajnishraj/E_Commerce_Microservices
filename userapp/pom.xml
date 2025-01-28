@@ -50,6 +50,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<!--		for synchronous call-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
@@ -94,10 +95,6 @@
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.11.5</version> <!-- Jackson integration (for deserialization) -->
 		</dependency>
-	<!--	<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway</artifactId>
-		</dependency>-->
 	</dependencies>
 
 	<build>

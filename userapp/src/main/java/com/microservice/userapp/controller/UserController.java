@@ -1,7 +1,6 @@
 package com.microservice.userapp.controller;
 
 import com.microservice.userapp.model.User;
-import com.microservice.userapp.repo.UserRepository;
 import com.microservice.userapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
