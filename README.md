@@ -22,6 +22,10 @@ This application is designed using Spring Boot Microservices and includes the fo
     - **User Service**: If the request is user-related.
     - **Order Service**: If the request is order-related.
 6. If a service is down, a fallback method is triggered to handle the failure gracefully.
+## Architecture Diagram
+
+![Ecart Architecture Diagram](https://github.com/therajnishraj/Microservices/blob/main/ecart_diagram.jpeg)
+
 
 ## Microservices Communication
 
