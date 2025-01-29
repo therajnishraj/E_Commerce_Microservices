@@ -1,0 +1,63 @@
+version: '3'
+services:
+  api-gateway:
+    image: api-gateway:latest
+    build:
+      context: ./apigateway  # Corrected directory name
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-service
+    environment:
+      - EUREKA_SERVER=http://eureka-service:8761/eureka/
+
+  auth-service:
+    image: auth-service:latest
+    build:
+      context: ./authservice  # Corrected directory name
+    ports:
+      - "9090:9090"
+    depends_on:
+      - eureka-service
+    environment:
+      - EUREKA_SERVER=http://eureka-service:8761/eureka/
+
+  config-service:
+    image: config-service:latest
+    build:
+      context: ./configserver  # Corrected directory name
+    ports:
+      - "8070:8070"
+    depends_on:
+      - eureka-service
+    environment:
+      - EUREKA_SERVER=http://eureka-service:8761/eureka/
+
+  eureka-service:
+    image: eureka-service:latest
+    build:
+      context: ./eurekaserver  # Corrected directory name
+    ports:
+      - "8761:8761"
+
+  order-service:
+    image: order-service:latest
+    build:
+      context: ./orderapp  # Corrected directory name
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-service
+    environment:
+      - EUREKA_SERVER=http://eureka-service:8761/eureka/
+
+  user-service:
+    image: user-service:latest
+    build:
+      context: ./userapp  # Corrected directory name
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-service
+    environment:
+      - EUREKA_SERVER=http://eureka-service:8761/eureka/
