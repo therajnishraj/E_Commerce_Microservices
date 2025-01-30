@@ -16,8 +16,8 @@ spring:
 #    properties:
 #      hibernate:
 #        dialect: org.hibernate.dialect.PostgreSQLDialect
-  config:
-    import: optional:configserver:http://CONFIGSERVER
+#  config:
+#    import: optional:configserver:http://CONFIGSERVER
 
 server:
   port: 8082
