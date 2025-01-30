@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  application:
+    name: eurekaserver
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false   # Eureka Server should not register itself with Eureka
+    fetch-registry: false         # Disable fetching registry for Eureka Server
+  server:
+    enable-self-preservation: false  # Disable self-preservation mode for Eureka Server
+
+# Optional: Disable Eureka client if needed
+# eureka:
+#   client:
+#     enabled: false

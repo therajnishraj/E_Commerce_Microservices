@@ -1,0 +1,28 @@
+spring:
+#  profiles:
+#    active: @spring.profiles.active@
+  application:
+    name: userapp
+
+  # Database Configuration for Dockerized PostgreSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    username: postgres
+    password: postgres
+
+  # JPA and Hibernate configurations
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically updates the schema
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  # PostgreSQL dialect for Hibernate
+
+server:
+  port: 8081
+
+# Eureka Client Configuration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  # Eureka service URL for Docker/Kubernetes

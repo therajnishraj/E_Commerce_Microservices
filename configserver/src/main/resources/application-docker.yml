@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: @spring.profiles.active@
   application:
     name: configserver
   cloud:
@@ -16,7 +14,7 @@ spring:
   eureka:
     client:
       serviceUrl:
-        defaultZone: http://localhost:8761/eureka/
+        defaultZone: http://eureka-service:8761/eureka/
 
 server:
   port: 8070

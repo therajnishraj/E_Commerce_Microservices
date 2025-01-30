@@ -2,12 +2,10 @@ server:
   port: 9090
 
 spring:
-  profiles:
-    active: @spring.profiles.active@
   application:
     name: authservice
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    url: jdbc:postgresql://postgres:5432/mydockerdb  # Database URL for Docker
     username: postgres
     password: postgres
   jpa:
@@ -23,8 +21,9 @@ spring:
   eureka:
     client:
       serviceUrl:
-        defaultZone: http://localhost:8761/eureka/
+        defaultZone: http://eureka-service:8761/eureka/
 
 logging:
   file:
     name: authservice.log
+

@@ -30,6 +30,17 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<profiles>
+		<profile>
+			<id>docker</id> <!-- Production profile -->
+			<properties>
+				<spring.profiles.active>docker</spring.profiles.active>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault> <!-- Activate this profile by default -->
+			</activation>
+		</profile>
+	</profiles>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

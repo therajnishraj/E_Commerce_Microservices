@@ -30,6 +30,24 @@
 		<java.version>17</java.version>
 		<spring-cloud.version>2024.0.0</spring-cloud.version>
 	</properties>
+	<profiles>
+		<profile>
+			<id>dev</id> <!-- Development profile -->
+			<properties>
+				<spring.profiles.active>dev</spring.profiles.active>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault> <!-- Activate this profile by default -->
+			</activation>
+		</profile>
+
+		<profile>
+			<id>docker</id> <!-- Production profile -->
+			<properties>
+				<spring.profiles.active>docker</spring.profiles.active>
+			</properties>
+		</profile>
+	</profiles>
 	<dependencies>
 		<!-- Spring Cloud Gateway dependency -->
 		<dependency>
