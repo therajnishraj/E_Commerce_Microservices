@@ -12,7 +12,7 @@ spring:
 
   # Database Configuration for Dockerized PostgreSQL
   datasource:
-    url: jdbc:postgresql://postgres:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
 

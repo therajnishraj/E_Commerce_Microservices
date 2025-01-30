@@ -25,12 +25,17 @@ public class AuthController {
 
     @PostMapping("/token")
     public String getToken(@RequestBody AuthRequest authRequest) {
-        Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
-        if (authenticate.isAuthenticated()) {
-            return service.generateToken(authRequest.getUsername());
-        } else {
-            throw new RuntimeException("invalid access");
+        try{
+            Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
+            if (authenticate.isAuthenticated()) {
+                return service.generateToken(authRequest.getUsername());
+            } else {
+                return "User is not allowed to access the request";
+            }
+        } catch (Exception e) {
+            return "Invalid username and password..!";
         }
+
     }
 
     @GetMapping("/validate")

@@ -33,18 +33,8 @@
 		<spring.profiles.active>dev</spring.profiles.active>
 	</properties>
 	<profiles>
-	<!--	<profile>
-			<id>dev</id> &lt;!&ndash; Development profile &ndash;&gt;
-			<properties>
-				<spring.profiles.active>dev</spring.profiles.active>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault> &lt;!&ndash; Activate this profile by default &ndash;&gt;
-			</activation>
-		</profile>-->
-
 		<profile>
-			<id>docker</id> <!-- Production profile -->
+			<id>docker</id>
 			<properties>
 				<spring.profiles.active>docker</spring.profiles.active>
 			</properties>
