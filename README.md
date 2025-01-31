@@ -1,6 +1,6 @@
 # E-Commerce Microservices Architecture
 
-This repository contains a microservices-based application. It includes multiple services that interact with each other via REST APIs and are registered with Eureka Service Discovery. The API Gateway routes requests to the respective microservices.
+This repository contains a microservices-based application. It includes multiple services that interact with each other via FeignClient and are registered with Eureka Service Discovery. The API Gateway routes requests to the respective microservices.
 
 ## Architecture Overview
 
