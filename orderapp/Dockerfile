@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY target/order-service.jar order-service.jar
+COPY target/order-service.jar /app/order-service.jar
 
 # Expose the port the application will run on
 EXPOSE 8082

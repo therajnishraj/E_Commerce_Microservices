@@ -13,6 +13,8 @@ services:
       - "5432:5432"
     networks:
       - ecart-network
+    volumes:
+      - postgres-data:/var/lib/postgresql/data  # Added volume
 
   eureka-service:
     image: eureka-service:latest
@@ -48,7 +50,6 @@ services:
     networks:
       - ecart-network
 
-
   order-service:
     image: order-service:latest
     build:
@@ -76,3 +77,7 @@ services:
 networks:
   ecart-network:
     driver: bridge
+
+volumes:
+  postgres-data:  # Added volume definition to store data in local of container database
+    driver: local

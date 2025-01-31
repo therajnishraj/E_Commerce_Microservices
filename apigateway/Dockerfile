@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY target/gateway-service.jar gateway-service.jar
+COPY target/gateway-service.jar /app/gateway-service.jar
 
 # Expose the port the application will run on
 EXPOSE 8080

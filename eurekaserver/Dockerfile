@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY target/eureka-service.jar eureka-service.jar
+COPY target/eureka-service.jar /app/eureka-service.jar
 
 # Expose the port the application will run on
 EXPOSE 8761
