@@ -2,11 +2,11 @@ spring:
   application:
     name: orderapp
 
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIGSERVER  # Refers to the Config Server service registered in Eureka
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: CONFIGSERVER  # Refers to the Config Server service registered in Eureka
 
   # Database Configuration for Dockerized PostgreSQL
   datasource:

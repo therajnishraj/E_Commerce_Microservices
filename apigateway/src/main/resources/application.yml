@@ -38,10 +38,10 @@ spring:
                 fallbackUri: forward:/fallback/global
 
   # Eureka Client Configuration
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:8761/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 logging:
   file:

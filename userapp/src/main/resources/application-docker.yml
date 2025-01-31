@@ -4,17 +4,17 @@ spring:
 
   # Database Configuration for Dockerized PostgreSQL
   datasource:
-    url: jdbc:postgresql://postgres:5432/mydockerdb  # Database URL for Docker
+    url: jdbc:postgresql://postgres:5432/mydockerdb
     username: postgres
     password: postgres
 
   # JPA and Hibernate configurations
   jpa:
     hibernate:
-      ddl-auto: update  # Automatically updates the schema
+      ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect  # PostgreSQL dialect for Hibernate
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 server:
   port: 8081

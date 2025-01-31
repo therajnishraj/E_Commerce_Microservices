@@ -48,18 +48,6 @@ services:
     networks:
       - ecart-network
 
-  config-service:
-    image: config-service:latest
-    build:
-      context: ./configserver
-    ports:
-      - "8070:8070"
-    depends_on:
-      - eureka-service
-    environment:
-      - EUREKA_SERVER=http://eureka-service:8761/eureka/
-    networks:
-      - ecart-network
 
   order-service:
     image: order-service:latest

@@ -13,10 +13,10 @@ spring:
           clone-on-start: true  # Clone the Git repo during startup to ensure it is ready
 
   # Eureka Client Configuration
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:8761/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 server:
   port: 8070

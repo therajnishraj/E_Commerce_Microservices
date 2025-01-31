@@ -10,18 +10,18 @@ spring:
     password: postgres
   jpa:
     hibernate:
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
   # Eureka Client Configuration
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://eureka-service:8761/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-service:8761/eureka/
 
 logging:
   file:
