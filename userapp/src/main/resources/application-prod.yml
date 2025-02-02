@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: userapp
+
+  # Database Configuration for Dockerized PostgreSQL
+  datasource:
+    #    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    url: jdbc:postgresql://ep-frosty-cell-a8unx7sq-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+    #    username: postgres
+    username: neondb_owner
+    #    password: root
+    password: npg_UVPp0k4HdxBq
+
+  # JPA and Hibernate configurations
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081
+
+# Eureka Client Configuration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes

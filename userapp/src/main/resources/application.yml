@@ -1,6 +1,7 @@
 spring:
   profiles:
-    active: @spring.profiles.active@
+#    active: @spring.profiles.active@
+    active: ${spring.profiles.active}
   application:
     name: userapp
 
@@ -8,7 +9,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
     username: postgres
-    password: postgres
+    password: root
 
   # JPA and Hibernate configurations
   jpa:

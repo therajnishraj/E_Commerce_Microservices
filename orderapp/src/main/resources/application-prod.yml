@@ -1,21 +1,21 @@
 spring:
-  profiles:
-#    active: @spring.profiles.active@
-    active: ${spring.profiles.active}
   application:
     name: orderapp
 
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIGSERVER  # Refers to the Config Server service registered in Eureka
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: CONFIGSERVER  # Refers to the Config Server service registered in Eureka
 
   # Database Configuration for Dockerized PostgreSQL
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: root
+    #    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    url: jdbc:postgresql://ep-frosty-cell-a8unx7sq-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+    #    username: postgres
+    username: neondb_owner
+    #    password: root
+    password: npg_UVPp0k4HdxBq
 
   # JPA and Hibernate configurations
   jpa:
@@ -46,7 +46,7 @@ resilience4j:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/  # Connects to Eureka server
+      defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/  # Connects to Eureka server
 
 # Optional: If you don't want Cloud Config to be enabled
 spring.cloud.config.enabled: false
