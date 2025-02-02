@@ -1,7 +1,4 @@
 spring:
-  profiles:
-#    active: @spring.profiles.active@
-    active: ${spring.profiles.active}
   application:
     name: apigateway
   cloud:
@@ -42,7 +39,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/
 
 logging:
   file:
