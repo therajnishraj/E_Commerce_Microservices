@@ -7,14 +7,17 @@ spring:
   application:
     name: authservice
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
-    username: postgres
-    password: postgres
+#    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    url: jdbc:postgresql://ep-frosty-cell-a8unx7sq-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+#    username: postgres
+    username: neondb_owner
+#    password: root
+    password: npg_UVPp0k4HdxBq
   jpa:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    ddl-auto: update
+    ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect

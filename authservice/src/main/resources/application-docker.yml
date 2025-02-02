@@ -5,9 +5,12 @@ spring:
   application:
     name: authservice
   datasource:
-    url: jdbc:postgresql://postgres:5432/mydockerdb  # Database URL for Docker
-    username: postgres
-    password: postgres
+    #    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    url: jdbc:postgresql://ep-frosty-cell-a8unx7sq-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+    #    username: postgres
+    username: neondb_owner
+    #    password: root
+    password: npg_UVPp0k4HdxBq
   jpa:
     hibernate:
       ddl-auto: update
