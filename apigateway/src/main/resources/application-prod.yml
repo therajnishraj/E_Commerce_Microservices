@@ -40,7 +40,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/
-
+    registerWithEureka: true
 logging:
   file:
     name: apigateway.log
