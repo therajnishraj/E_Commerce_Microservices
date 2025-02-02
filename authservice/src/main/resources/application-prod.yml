@@ -1,0 +1,32 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: authservice
+  datasource:
+    #    url: jdbc:postgresql://localhost:5432/postgres  # Database URL for Docker
+    url: jdbc:postgresql://ep-frosty-cell-a8unx7sq-pooler.eastus2.azure.neon.tech/neondb?sslmode=require
+    #    username: postgres
+    username: neondb_owner
+    #    password: root
+    password: npg_UVPp0k4HdxBq
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  # Eureka Client Configuration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://e-commerce-microservices-1.onrender.com/eureka/
+
+logging:
+  file:
+    name: authservice.log
+
