@@ -24,7 +24,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://e-commerce-microservices-1.onrender.com/eureka/
+      defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/
 
 logging:
   file:
