@@ -1,7 +1,4 @@
 spring:
-  profiles:
-#    active: @spring.profiles.active@
-    active: ${spring.profiles.@spring.profiles.active@}
   application:
     name: eurekaserver
 
