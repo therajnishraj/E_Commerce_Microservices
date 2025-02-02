@@ -28,7 +28,6 @@ spring:
           uri: lb://AUTHSERVICE
           predicates:
             - Path=/auth/**
-            - Method=POST
           filters:
 #            - AuthenticationFilter
             - name: CircuitBreaker
