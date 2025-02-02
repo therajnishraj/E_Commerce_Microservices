@@ -4,7 +4,7 @@ server:
 spring:
   profiles:
 #    active: @spring.profiles.active@
-    active: ${spring.profiles.active} #for live
+    active: ${spring.profiles.active} #for live #for live
   application:
     name: authservice
   datasource:
