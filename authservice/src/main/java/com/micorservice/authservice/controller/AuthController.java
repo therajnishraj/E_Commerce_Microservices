@@ -28,7 +28,7 @@ public class AuthController {
     public ResponseEntity<String> addNewUser(@RequestBody UserCredential user) {
         try{
             log.info("****user created ");
-            return ResponseEntity.ok("User registered successfully");
+            return ResponseEntity.ok(service.saveUser(user));
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);
