@@ -3,6 +3,8 @@ package com.micorservice.authservice.controller;
 import com.micorservice.authservice.dto.AuthRequest;
 import com.micorservice.authservice.entity.UserCredential;
 import com.micorservice.authservice.service.AuthService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
+    private static final Logger log = LoggerFactory.getLogger(AuthController.class);
+
     @Autowired
     private AuthService service;
 
@@ -23,6 +27,7 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<String> addNewUser(@RequestBody UserCredential user) {
         try{
+            log.info("****user created ");
             return ResponseEntity.ok("User registered successfully");
         } catch (Exception e) {
             e.printStackTrace();

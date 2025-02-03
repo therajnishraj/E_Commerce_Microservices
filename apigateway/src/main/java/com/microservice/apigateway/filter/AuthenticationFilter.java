@@ -1,6 +1,8 @@
 package com.microservice.apigateway.filter;
 
 import com.microservice.apigateway.util.JwtUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
@@ -15,6 +17,8 @@ import reactor.core.publisher.Mono;
 
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
+    private static final Logger log = LoggerFactory.getLogger(AuthenticationFilter.class);
+
 
     @Autowired
     private RouteValidator validator;
@@ -68,6 +72,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
         response.setStatusCode(status);
         response.getHeaders().add("Content-Type", "application/json");
 
+        log.info("error {}",message);
         String errorResponse = String.format("{\"error\": \"%s\"}", message);
         return response.writeWith(Mono.just(response.bufferFactory().wrap(errorResponse.getBytes())));
     }
