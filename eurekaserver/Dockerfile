@@ -11,8 +11,11 @@ COPY .mvn .mvn
 # Copy the source code
 COPY src src
 
+## Build the project with the 'docker' profile and create the executable JAR
+#RUN mvn clean package -DskipTests -Dspring.profiles.active=docker
+
 # Build the project with the 'docker' profile and create the executable JAR
-RUN mvn clean package -DskipTests -Dspring.profiles.active=docker
+RUN mvn clean package -DskipTests -Dspring.profiles.active=${SPRING_PROFILES_ACTIVE:-docker}
 
 # Stage 2: Run the application using OpenJDK 17
 FROM eclipse-temurin:17-jdk
