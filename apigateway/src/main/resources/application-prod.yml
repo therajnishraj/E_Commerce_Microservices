@@ -61,3 +61,8 @@ server:
   port: 8080
 
 
+filters:
+  - name: RewritePath
+    args:
+      regexp: /auth/(.*)
+      replacement: /$1
