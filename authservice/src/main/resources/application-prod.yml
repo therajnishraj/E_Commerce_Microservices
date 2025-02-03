@@ -39,3 +39,10 @@ logging:
             allowedOrigins: "*"
             allowedMethods: "GET, POST, PUT, DELETE"
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+
+
