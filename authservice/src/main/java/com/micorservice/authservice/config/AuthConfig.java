@@ -32,7 +32,7 @@ public class AuthConfig {
         log.info("in securityFilterChain");
         http.csrf(csrf -> csrf.disable()) // Disabling CSRF
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/register", "/auth/token", "/auth/validate").permitAll()
+                        .requestMatchers("/auth/register", "/auth/token", "/auth/validate","/actuator/health", "/actuator/info").permitAll()
                         .anyRequest().authenticated()
                 );
         return http.build();
