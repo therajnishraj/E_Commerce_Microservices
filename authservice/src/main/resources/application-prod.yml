@@ -24,7 +24,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-#      defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/
       defaultZone: https://eurekaserver-pjrz.onrender.com/
     registerWithEureka: true
 logging:
