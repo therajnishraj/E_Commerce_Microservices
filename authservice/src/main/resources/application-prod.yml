@@ -30,3 +30,12 @@ logging:
   file:
     name: authservice.log
 
+
+  web:
+    mvc:
+      cors:
+        mappings:
+          - path: "/auth/**"
+            allowedOrigins: "*"
+            allowedMethods: "GET, POST, PUT, DELETE"
+

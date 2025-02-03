@@ -9,8 +9,8 @@ spring:
           predicates:
             - Path=/users/**
           filters:
-            - AuthenticationFilter  # AuthenticationFilter for checking token validity
-            - name: CircuitBreaker   # CircuitBreaker to handle requests if the user microservice is down
+            - AuthenticationFilter
+            - name: CircuitBreaker
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
@@ -29,22 +29,25 @@ spring:
           predicates:
             - Path=/auth/**
           filters:
-#            - AuthenticationFilter
+#            - AuthenticationFilter # Uncomment if needed
             - name: CircuitBreaker
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
 
-  # Eureka Client Configuration
 eureka:
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/
     registerWithEureka: true
+
 logging:
   file:
     name: apigateway.log
+  level:
+    org.springframework.cloud.gateway: DEBUG
 
 server:
   port: 8080
+
 
