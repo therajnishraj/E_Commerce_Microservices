@@ -1,10 +1,12 @@
 spring:
   application:
     name: apigateway
-
-
   cloud:
     gateway:
+      discovery:
+        enabled: true  # Enables automatic service discovery via Eureka
+        locator:
+          enabled: true  # Enables automatic route creation based on Eureka service names
       routes:
         - id: user-service
           uri: lb://USERAPP
@@ -39,6 +41,8 @@ spring:
                 fallbackUri: forward:/fallback/global
       http-client:
         response-timeout: 30000
+
+
 eureka:
   client:
     serviceUrl:
@@ -51,9 +55,9 @@ logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.cloud.loadbalancer: DEBUG
+    org.springframework.cloud.loadbalancer.core.LoadBalancerClient: DEBUG
 
 server:
   port: 8080
-
 
 
