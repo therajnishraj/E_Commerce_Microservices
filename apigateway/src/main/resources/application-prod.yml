@@ -1,6 +1,8 @@
 spring:
   application:
     name: apigateway
+
+
   cloud:
     gateway:
       routes:
@@ -35,7 +37,8 @@ spring:
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
-
+      http-client:
+        response-timeout: 30000
 eureka:
   client:
     serviceUrl:
@@ -47,8 +50,10 @@ logging:
     name: apigateway.log
   level:
     org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.loadbalancer: DEBUG
 
 server:
   port: 8080
+
 
 
