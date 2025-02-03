@@ -19,6 +19,7 @@ public class AuthController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    @CrossOrigin(origins = "*")
     @PostMapping("/register")
     public ResponseEntity<String> addNewUser(@RequestBody UserCredential user) {
         try{
