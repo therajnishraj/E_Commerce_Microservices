@@ -29,12 +29,11 @@ spring:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
         - id: auth-service
-#          uri: lb://AUTHSERVICE
-          uri: http://authservice-cig6.onrender.com
+          uri: lb://AUTHSERVICE
           predicates:
             - Path=/auth/**
           filters:
-#            - AuthenticationFilter # Uncomment if needed
+            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
             - name: CircuitBreaker
               args:
                 name: globalCB
@@ -44,6 +43,10 @@ spring:
 
 eureka:
   instance:
+    secure-port-enabled: true
+    non-secure-port-enabled: false
+    metadata-map:
+        secure: true  # Tell Eureka that this service uses HTTPS
     preferIpAddress: false
     hostname: eurekaserver-e2ow.onrender.com
   client:
