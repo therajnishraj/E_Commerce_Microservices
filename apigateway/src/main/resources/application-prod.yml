@@ -73,3 +73,7 @@ server:
 #      replacement: /$1
   ssl:
     enabled: true
+    key-store: classpath:keystore.jks
+    key-store-password: your-keystore-password
+    key-store-type: JKS
+    key-alias: your-key-alias
