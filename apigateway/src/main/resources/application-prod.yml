@@ -63,7 +63,7 @@ logging:
     org.springframework.cloud.loadbalancer.core.LoadBalancerClient: DEBUG
 
 server:
-  port: 8080
+  port: 8443
 
 
 #filters:
