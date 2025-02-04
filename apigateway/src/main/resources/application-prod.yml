@@ -42,8 +42,10 @@ spring:
       http-client:
         response-timeout: 60000
 
-
 eureka:
+  instance:
+    preferIpAddress: false
+    hostname: eurekaserver-e2ow.onrender.com
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-e2ow.onrender.com/eureka/
