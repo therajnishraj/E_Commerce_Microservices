@@ -27,7 +27,7 @@ eureka:
     hostname: userservice-lfua.onrender.com
   client:
     serviceUrl:
-      defaultZone: https://eurekaserver-xk3o.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
+      defaultZone: https://eurekaserver-a3o0.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
     registerWithEureka: true
 logging:
   file:
