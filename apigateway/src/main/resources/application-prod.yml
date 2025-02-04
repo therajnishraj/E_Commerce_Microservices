@@ -40,10 +40,13 @@ spring:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
       http-client:
-        response-timeout: 30000
+        response-timeout: 60000
 
 
 eureka:
+  instance:
+    hostname: userservice-lfua.onrender.com
+    preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-xk3o.onrender.com/eureka/
