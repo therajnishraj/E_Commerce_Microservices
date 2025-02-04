@@ -44,9 +44,6 @@ spring:
 
 
 eureka:
-  instance:
-    hostname: userservice-lfua.onrender.com
-    preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-xk3o.onrender.com/eureka/
