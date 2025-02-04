@@ -22,9 +22,12 @@ spring:
 
   # Eureka Client Configuration
 eureka:
+  instance:
+    preferIpAddress: false
+    hostname: userservice-lfua.onrender.com
   client:
     serviceUrl:
-      defaultZone: https://eurekaserver-xk3o.onrender.com/eureka/
+      defaultZone: https://eurekaserver-xk3o.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
     registerWithEureka: true
 logging:
   file:
