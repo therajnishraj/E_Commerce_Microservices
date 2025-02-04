@@ -48,4 +48,7 @@ management:
       exposure:
         include: health, info
 
+  instance:
+    metadata-map:
+      secure: true
 
