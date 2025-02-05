@@ -49,6 +49,8 @@ spring:
         response-timeout: 120000
 
 eureka:
+  server:
+    peer-node-read-timeout-ms: 120000
   instance:
     secure-port-enabled: true
     non-secure-port-enabled: false
