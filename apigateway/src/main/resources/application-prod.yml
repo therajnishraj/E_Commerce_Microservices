@@ -32,8 +32,8 @@ spring:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
         - id: auth-service
-#          uri: lb://AUTHSERVICE
-          uri: http://authservice-4vwx.onrender.com
+          uri: lb://AUTHSERVICE
+#          uri: http://authservice-4vwx.onrender.com
           predicates:
             - Path=/auth/**
           filters:
@@ -53,8 +53,8 @@ eureka:
   server:
     peer-node-read-timeout-ms: 120000
   instance:
-#    secure-port-enabled: true
-#    non-secure-port-enabled: false
+    secure-port-enabled: false
+    non-secure-port-enabled: true
 #    metadata-map:
 #        secure: true  # Tell Eureka that this service uses HTTPS
     preferIpAddress: true
@@ -94,8 +94,8 @@ server:
 
 
 
-#  ssl:
-#    enabled: true
+  ssl:
+    enabled: false
 ##    key-store: classpath:keystore.jks
 #    key-store: file:/app/resources/keystore.jks
 #    key-store-password: Demo@123
