@@ -52,10 +52,10 @@ eureka:
   server:
     peer-node-read-timeout-ms: 120000
   instance:
-    secure-port-enabled: true
-    non-secure-port-enabled: false
-    metadata-map:
-        secure: true  # Tell Eureka that this service uses HTTPS
+#    secure-port-enabled: true
+#    non-secure-port-enabled: false
+#    metadata-map:
+#        secure: true  # Tell Eureka that this service uses HTTPS
     preferIpAddress: true
     hostname: eurekaserver-71hf.onrender.com
   client:
@@ -90,11 +90,14 @@ server:
 #    args:
 #      regexp: /auth/(.*)
 #      replacement: /$1
-  ssl:
-    enabled: true
-#    key-store: classpath:keystore.jks
-    key-store: file:/app/resources/keystore.jks
-    key-store-password: Demo@123
-    key-store-type: JKS
+
+
+
+#  ssl:
+#    enabled: true
+##    key-store: classpath:keystore.jks
+#    key-store: file:/app/resources/keystore.jks
+#    key-store-password: Demo@123
+#    key-store-type: JKS
 #    key-alias: your-key-alias
 
