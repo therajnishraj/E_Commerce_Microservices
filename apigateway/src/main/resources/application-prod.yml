@@ -42,10 +42,10 @@ spring:
               args:
                   regexp: "/auth/(.*)"
                   replacement: "/$1"
-            - name: CircuitBreaker
-              args:
-                name: globalCB
-                fallbackUri: forward:/fallback/global
+#            - name: CircuitBreaker
+#              args:
+#                name: globalCB
+#                fallbackUri: forward:/fallback/global
       http-client:
         response-timeout: 60000
 
@@ -69,6 +69,7 @@ logging:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.cloud.loadbalancer: DEBUG
     org.springframework.cloud.loadbalancer.core.LoadBalancerClient: DEBUG
+    org.springframework.web.client.RestTemplate: TRACE
 
 server:
   address: 0.0.0.0
