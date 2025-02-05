@@ -25,6 +25,11 @@ eureka:
   instance:
     preferIpAddress: false
     hostname: authservice-cig6.onrender.com
+    non-secure-port-enabled: false
+    secure-port-enabled: true
+    secure-port: 443
+    metadata-map:
+        secure: true  # ✅ Tells Eureka that this service uses HTTPS
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-e2ow.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
