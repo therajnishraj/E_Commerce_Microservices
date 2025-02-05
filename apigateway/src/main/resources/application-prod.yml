@@ -36,12 +36,12 @@ spring:
           uri: http://authservice-4vwx.onrender.com
           predicates:
             - Path=/auth/**
-          filters:
-            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
-            - name: RewritePath
-              args:
-                  regexp: "/auth/(.*)"
-                  replacement: "/$1"
+#          filters:
+#            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
+#            - name: RewritePath
+#              args:
+#                  regexp: "/auth/(.*)"
+#                  replacement: "/$1"
             - name: CircuitBreaker
               args:
                 name: globalCB
