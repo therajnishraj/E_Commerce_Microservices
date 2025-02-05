@@ -72,8 +72,8 @@ logging:
 
 server:
   address: 0.0.0.0
-  port: 5000
-#  port: 10000
+#  port: 8080
+  port: 10000
 
 
 #filters:
