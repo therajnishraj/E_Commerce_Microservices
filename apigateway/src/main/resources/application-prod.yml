@@ -63,6 +63,7 @@ logging:
     org.springframework.cloud.loadbalancer.core.LoadBalancerClient: DEBUG
 
 server:
+  address: 0.0.0.0
   port: 8443
 
 
@@ -73,7 +74,8 @@ server:
 #      replacement: /$1
   ssl:
     enabled: true
-    key-store: classpath:keystore.jks
+#    key-store: classpath:keystore.jks
+    key-store: file:/app/resources/keystore.jks
     key-store-password: Demo@123
     key-store-type: JKS
 #    key-alias: your-key-alias
