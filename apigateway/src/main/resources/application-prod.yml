@@ -37,6 +37,10 @@ spring:
             - Path=/auth/**
           filters:
             - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
+            - name: RewritePath
+              args:
+                  regexp: "/auth/(.*)"
+                  replacement: "/$1"
             - name: CircuitBreaker
               args:
                 name: globalCB
@@ -50,7 +54,7 @@ eureka:
     non-secure-port-enabled: false
     metadata-map:
         secure: true  # Tell Eureka that this service uses HTTPS
-    preferIpAddress: false
+    preferIpAddress: true
     hostname: eurekaserver-e2ow.onrender.com
   client:
     serviceUrl:
