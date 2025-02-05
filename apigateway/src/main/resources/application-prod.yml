@@ -32,8 +32,7 @@ spring:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
         - id: auth-service
-#          uri: lb://AUTHSERVICE
-          uri: http://authservice-cig6.onrender.com
+          uri: lb://AUTHSERVICE
           predicates:
             - Path=/auth/**
           filters:
