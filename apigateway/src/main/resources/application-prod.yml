@@ -47,7 +47,7 @@ spring:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
       http-client:
-        response-timeout: 60000
+        response-timeout: 120000
 
 eureka:
   instance:
