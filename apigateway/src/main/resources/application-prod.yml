@@ -55,7 +55,7 @@ eureka:
     metadata-map:
         secure: true  # Tell Eureka that this service uses HTTPS
     preferIpAddress: true
-    hostname: eurekaserver-e2ow.onrender.com
+    hostname: eurekaserver-71hf.onrender.com
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-71hf.onrender.com/eureka/
