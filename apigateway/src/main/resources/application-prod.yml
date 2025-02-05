@@ -36,7 +36,7 @@ spring:
           uri: http://authservice-4vwx.onrender.com
           predicates:
             - Path=/auth/**
-#          filters:
+          filters:
 #            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
 #            - name: RewritePath
 #              args:
