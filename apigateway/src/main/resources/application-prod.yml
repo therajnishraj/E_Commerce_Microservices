@@ -42,10 +42,10 @@ spring:
               args:
                   regexp: "/auth/(.*)"
                   replacement: "/$1"
-#            - name: CircuitBreaker
-#              args:
-#                name: globalCB
-#                fallbackUri: forward:/fallback/global
+            - name: CircuitBreaker
+              args:
+                name: globalCB
+                fallbackUri: forward:/fallback/global
       http-client:
         response-timeout: 60000
 
@@ -73,8 +73,8 @@ logging:
 
 server:
   address: 0.0.0.0
-#  port: 8080
-  port: 10000
+  port: 443
+#  port: 10000
 
 
 #filters:
