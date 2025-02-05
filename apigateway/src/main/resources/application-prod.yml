@@ -58,7 +58,7 @@ eureka:
     hostname: eurekaserver-e2ow.onrender.com
   client:
     serviceUrl:
-      defaultZone: https://eurekaserver-e2ow.onrender.com/eureka/
+      defaultZone: https://eurekaserver-71hf.onrender.com/eureka/
     registerWithEureka: true
 
 logging:

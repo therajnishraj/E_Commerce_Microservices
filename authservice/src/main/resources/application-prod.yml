@@ -32,7 +32,7 @@ eureka:
         secure: true  # ✅ Tells Eureka that this service uses HTTPS
   client:
     serviceUrl:
-      defaultZone: https://eurekaserver-e2ow.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
+      defaultZone: https://eurekaserver-71hf.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
     registerWithEureka: true
 logging:
   file:
