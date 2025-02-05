@@ -3,6 +3,9 @@ spring:
     name: apigateway
   cloud:
     gateway:
+      httpclient:
+        ssl:
+          useInsecureTrustManager: true # Accepts all SSL certs, needed for HTTPS in Render
       discovery:
         enabled: true  # Enables automatic service discovery via Eureka
         locator:
