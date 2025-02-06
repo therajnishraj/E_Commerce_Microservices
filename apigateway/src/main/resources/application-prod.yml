@@ -77,7 +77,7 @@ logging:
 server:
 #  port: 8080
   address: 0.0.0.0
-  port: ${PORT:10000}  # Make sure this is set correctly for Render
+  port: ${PORT:8443}  # Make sure this is set correctly for Render
   keepAliveTimeout: 120000  # Timeout for persistent connections (120 seconds)
   tomcat:
       max-connections: 200
@@ -85,7 +85,13 @@ server:
       max-http-post-size: 20971520  # Optional: to control max post size
       threads:
         max: 200  # Optional: max number of threads for Tomcat to handle requests
-
+#  port: 8443
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: Demo@123
+    key-store-type: PKCS12
+    key-alias: myservice
+    enabled: true
 
 #filters:
 #  - name: RewritePath
@@ -95,11 +101,16 @@ server:
 
 
 
-  ssl:
-    enabled: false
+#  ssl:
+#    enabled: false
 ##    key-store: classpath:keystore.jks
 #    key-store: file:/app/resources/keystore.jks
 #    key-store-password: Demo@123
 #    key-store-type: JKS
 #    key-alias: your-key-alias
+
+
+#  server.port=8443
+
+
 
