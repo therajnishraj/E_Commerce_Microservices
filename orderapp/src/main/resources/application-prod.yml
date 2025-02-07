@@ -46,7 +46,7 @@ resilience4j:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://eurekaserver-pjrz.onrender.com/eureka/  # Connects to Eureka server
+      defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/  # Connects to Eureka server
     registerWithEureka: true
 # Optional: If you don't want Cloud Config to be enabled
 spring.cloud.config.enabled: false
