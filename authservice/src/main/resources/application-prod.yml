@@ -23,13 +23,13 @@ spring:
   # Eureka Client Configuration https://authservice-n68t.onrender.com
 eureka:
   instance:
-    preferIpAddress: false
+    preferIpAddress: true
     hostname: authservice-n68t.onrender.com
     non-secure-port-enabled: true
     secure-port-enabled: false
 #    secure-port: 443
-#    metadata-map:
-#        secure: true  # ✅ Tells Eureka that this service uses HTTPS
+    metadata-map:
+        secure: false  # ✅ Tells Eureka that this service uses HTTPS
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
@@ -53,9 +53,7 @@ management:
       exposure:
         include: health, info
 
-  instance:
-    metadata-map:
-      secure: true
+
 
 server:
   port: 9090
@@ -65,3 +63,5 @@ server:
 #    key-store-type: PKCS12
 #    key-alias: myservice
 #    enabled: true
+
+
