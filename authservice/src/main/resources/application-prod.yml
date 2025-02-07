@@ -25,11 +25,11 @@ eureka:
   instance:
     preferIpAddress: false
     hostname: authservice-n68t.onrender.com
-    non-secure-port-enabled: false
-    secure-port-enabled: true
-    secure-port: 443
-    metadata-map:
-        secure: true  # ✅ Tells Eureka that this service uses HTTPS
+    non-secure-port-enabled: true
+    secure-port-enabled: false
+#    secure-port: 443
+#    metadata-map:
+#        secure: true  # ✅ Tells Eureka that this service uses HTTPS
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
@@ -58,7 +58,7 @@ management:
       secure: true
 
 server:
-  port: 8443
+  port: 9090
 #  ssl:
 #    key-store: classpath:keystore.p12
 #    key-store-password: Demo@123
