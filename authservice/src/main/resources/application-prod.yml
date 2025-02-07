@@ -20,11 +20,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-  # Eureka Client Configuration https://authservice-cig6.onrender.com
+  # Eureka Client Configuration https://authservice-n68t.onrender.com
 eureka:
   instance:
     preferIpAddress: false
-    hostname: authservice-cig6.onrender.com
+    hostname: authservice-n68t.onrender.com
     non-secure-port-enabled: false
     secure-port-enabled: true
     secure-port: 443
