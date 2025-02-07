@@ -25,8 +25,12 @@ server:
 # Eureka Client Configuration
 eureka:
   instance:
-    preferIpAddress: false
+    preferIpAddress: true
     hostname: userservice-lfua.onrender.com
+    non-secure-port-enabled: true
+    secure-port-enabled: false
+    metadata-map:
+      secure: false
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes

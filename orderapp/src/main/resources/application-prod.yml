@@ -43,10 +43,16 @@ resilience4j:
         base-config: default
 
 # Eureka Client Configuration
+
 eureka:
+  instance:
+    preferIpAddress: true
+    hostname: orderservice-jf2k.onrender.com
+    non-secure-port-enabled: true
+    secure-port-enabled: false
+    metadata-map:
+      secure: false
   client:
     serviceUrl:
-      defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/  # Connects to Eureka server
+      defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/ # Eureka service URL for Docker/Kubernetes
     registerWithEureka: true
-# Optional: If you don't want Cloud Config to be enabled
-spring.cloud.config.enabled: false
