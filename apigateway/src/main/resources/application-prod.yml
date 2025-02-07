@@ -54,8 +54,8 @@ eureka:
   server:
     peer-node-read-timeout-ms: 120000
   instance:
-    secure-port-enabled: false
-    non-secure-port-enabled: true
+    secure-port-enabled: true
+    non-secure-port-enabled: false
 #    metadata-map:
 #        secure: true  # Tell Eureka that this service uses HTTPS
     preferIpAddress: true
