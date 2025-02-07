@@ -12,7 +12,7 @@ spring:
           enabled: true  # Enables automatic route creation based on Eureka service names
       routes:
         - id: user-service
-          uri: lb://USERAPP
+          uri: lbs://USERAPP
           predicates:
             - Path=/users/**
           filters:
@@ -100,10 +100,7 @@ server:
 #      replacement: /$1
 
 
-  ssl:
-    trustedX509Certificates:
-      - cert1.pem
-      - cert2.pem
+
 #  ssl:
 #    enabled: false
 ##    key-store: classpath:keystore.jks
