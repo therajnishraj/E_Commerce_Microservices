@@ -38,7 +38,7 @@ spring:
           predicates:
             - Path=/auth/**
           filters:
-#            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
+            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
 #            - name: RewritePath
 #              args:
 #                  regexp: "/auth/(.*)"
