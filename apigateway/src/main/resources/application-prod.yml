@@ -4,15 +4,15 @@ spring:
   cloud:
     gateway:
       httpclient:
-        ssl:
-          useInsecureTrustManager: true # Accepts all SSL certs, needed for HTTPS in Render
+        wiretap: true  # Enable logging for debugging
+        response-timeout: 120000ms
       discovery:
-        enabled: true  # Enables automatic service discovery via Eureka
         locator:
           enabled: true  # Enables automatic route creation based on Eureka service names
+          secure: false  # 🔥 Forces lb://AUTHSERVICE to use HTTP
       routes:
         - id: user-service
-          uri: lbs://USERAPP
+          uri: lb://USERAPP
           predicates:
             - Path=/users/**
           filters:
@@ -32,43 +32,27 @@ spring:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
         - id: auth-service
-#          uri: lb://AUTHSERVICE
-#          uri: http://AUTHSERVICE
-#          scheme: https
-          uri: http://authservice-4vwx.onrender.com
+          uri: lb://AUTHSERVICE  # 🔥 Load-balanced request instead of hardcoded URL
           predicates:
             - Path=/auth/**
           filters:
-            - SetRequestHeader=X-Forwarded-Proto, https #AuthenticationFilter # Uncomment if needed
-#            - name: RewritePath
-#              args:
-#                  regexp: "/auth/(.*)"
-#                  replacement: "/$1"
+            - SetRequestHeader=X-Forwarded-Proto, https
             - name: CircuitBreaker
               args:
                 name: globalCB
                 fallbackUri: forward:/fallback/global
-      http-client:
-        response-timeout: 120000
 
 eureka:
-  server:
-    peer-node-read-timeout-ms: 120000
   instance:
-    secure-port-enabled: true
-    non-secure-port-enabled: false
-#    metadata-map:
-#        secure: true  # Tell Eureka that this service uses HTTPS
+    secure-port-enabled: false  # 🔥 Ensures Eureka does NOT register HTTPS
+    non-secure-port-enabled: true
     preferIpAddress: true
-    hostname: eurekaserver-4qdh.onrender.com
   client:
     serviceUrl:
       defaultZone: https://eurekaserver-4qdh.onrender.com/eureka/
     registerWithEureka: true
 
 logging:
-  file:
-    name: apigateway.log
   level:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.cloud.loadbalancer: DEBUG
@@ -76,41 +60,11 @@ logging:
     org.springframework.web.client.RestTemplate: TRACE
 
 server:
-#  port: 8080
   address: 0.0.0.0
-  port: ${PORT:8443}  # Make sure this is set correctly for Render
-  keepAliveTimeout: 120000  # Timeout for persistent connections (120 seconds)
+  port: ${PORT:8443}
+  keepAliveTimeout: 120000
   tomcat:
-      max-connections: 200
-      connection-timeout: 120000  # 120 seconds
-      max-http-post-size: 20971520  # Optional: to control max post size
-      threads:
-        max: 200  # Optional: max number of threads for Tomcat to handle requests
-#  port: 8443
-#  ssl:
-#    key-store: classpath:keystore.p12
-#    key-store-password: Demo@123
-#    key-store-type: PKCS12
-#    key-alias: myservice
-#    enabled: true
-
-#filters:
-#  - name: RewritePath
-#    args:
-#      regexp: /auth/(.*)
-#      replacement: /$1
-
-
-
-#  ssl:
-#    enabled: false
-##    key-store: classpath:keystore.jks
-#    key-store: file:/app/resources/keystore.jks
-#    key-store-password: Demo@123
-#    key-store-type: JKS
-#    key-alias: your-key-alias
-
-
-#  server.port=8443
-
-
+    max-connections: 200
+    connection-timeout: 120000
+    threads:
+      max: 200
