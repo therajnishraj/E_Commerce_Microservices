@@ -5,7 +5,7 @@ spring:
     gateway:
       httpclient:
         wiretap: true  # Enable logging for debugging
-        response-timeout: 120000ms
+        response-timeout: 120000
       discovery:
         locator:
           enabled: true  # Enables automatic route creation based on Eureka service names
@@ -68,3 +68,5 @@ server:
     connection-timeout: 120000
     threads:
       max: 200
+
+
