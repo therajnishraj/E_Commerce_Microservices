@@ -100,7 +100,10 @@ server:
 #      replacement: /$1
 
 
-
+  ssl:
+    trustedX509Certificates:
+      - cert1.pem
+      - cert2.pem
 #  ssl:
 #    enabled: false
 ##    key-store: classpath:keystore.jks
@@ -111,6 +114,5 @@ server:
 
 
 #  server.port=8443
-
 
 
