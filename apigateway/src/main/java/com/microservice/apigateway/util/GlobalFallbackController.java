@@ -13,7 +13,7 @@ import java.util.Map;
 @RestController
 public class GlobalFallbackController {
 
-    @RequestMapping(value = "/global", method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
+    @RequestMapping(value = "/fallback/global", method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
     public Map<String, Object> globalFallback(
             ServerWebExchange exchange,
             @RequestParam(value = "error", required = false) String error) {
