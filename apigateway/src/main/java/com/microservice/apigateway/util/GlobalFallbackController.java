@@ -1,6 +1,8 @@
 package com.microservice.apigateway.util;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ServerWebExchange;
@@ -11,7 +13,7 @@ import java.util.Map;
 @RestController
 public class GlobalFallbackController {
 
-    @GetMapping("/fallback/global")
+    @RequestMapping(value = "/global", method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
     public Map<String, Object> globalFallback(
             ServerWebExchange exchange,
             @RequestParam(value = "error", required = false) String error) {
