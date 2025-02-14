@@ -12,12 +12,34 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
+
+/**
+ * MyOncePerRequestFilter is a custom filter that runs once per request and is responsible for
+ * validating the JWT token before allowing access to protected resources.
+ *
+ * This filter extracts the Authorization token from the request header, validates it,
+ * and rejects unauthorized requests by sending an appropriate error response.
+ *
+ * Usage:
+ * - This filter runs before processing any request.
+ * - It checks for the presence of the JWT token in the Authorization header.
+ * - If the token is missing or invalid, it responds with an HTTP 401 Unauthorized status.
+ * - If the token is valid, the request proceeds to the next filter in the chain.
+ *
+ * Prerequisites:
+ * - The client must include a valid JWT token in the `Authorization` header as `Bearer <token>`.
+ * - The `JwtUtil` class should provide the token validation logic.
+ *
+ * @author Rajnish Raj
+ */
 @Component
 public class MyOncePerRequestFilter extends OncePerRequestFilter {
 
 
     @Autowired
     JwtUtil jwtUtil;
+
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String token=request.getHeader(HttpHeaders.AUTHORIZATION);

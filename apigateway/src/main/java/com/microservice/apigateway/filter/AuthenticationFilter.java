@@ -14,7 +14,27 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
-
+/**
+ * AuthenticationFilter is a custom Gateway filter that validates JWT tokens
+ * for secured API routes in the API Gateway.
+ *
+ * This filter intercepts incoming requests, checks for the Authorization header,
+ * extracts the JWT token, and validates it using {@link JwtUtil}.
+ * If the token is missing, incorrectly formatted, or invalid, the request is
+ * rejected with an appropriate HTTP status code.
+ *
+ * Key Features:
+ * - Ensures authentication for secured routes.
+ * - Extracts and validates JWT tokens from the Authorization header.
+ * - Returns error responses for missing or invalid tokens.
+ * - Attaches the route ID to the exchange attributes for downstream processing.
+ *
+ * Usage:
+ * - Automatically applied to routes that require authentication.
+ * - Works within Spring Cloud Gateway to secure microservices.
+ *
+ * @author Rajnish Raj
+ */
 @Component
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
     private static final Logger log = LoggerFactory.getLogger(AuthenticationFilter.class);
@@ -31,22 +51,31 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
         super(Config.class);
     }
 
+    /**
+     * Applies the authentication filter logic to incoming requests.
+     *
+     * @param config The filter configuration (not used in this implementation).
+     * @return A GatewayFilter that processes authentication for secured routes.
+     */
     @Override
     public GatewayFilter apply(Config config) {
         return (exchange, chain) -> {
             String authHeader = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
+
+            // Check if the request requires authentication
             if (validator.isSecured.test(exchange.getRequest())) {
-                // Check for Authorization header
+                // Validate the presence of the Authorization header
                 if (!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
                     return handleError(exchange, "Missing Authorization header", HttpStatus.UNAUTHORIZED);
                 }
-
+                // Validate the format of the Authorization header
                 if (authHeader != null && authHeader.startsWith("Bearer ")) {
                     authHeader = authHeader.substring(7); // Extract token
                 } else {
                     return handleError(exchange, "Invalid Authorization header format", HttpStatus.UNAUTHORIZED);
                 }
 
+                // Validate the JWT token
                 try {
                     jwtUtil.validateToken(authHeader);
                 } catch (Exception e) {

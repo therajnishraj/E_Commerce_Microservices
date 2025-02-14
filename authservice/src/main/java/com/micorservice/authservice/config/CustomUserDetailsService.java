@@ -12,6 +12,25 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+
+/**
+ * CustomUserDetailsService is a service class that implements {@link UserDetailsService}
+ * to provide authentication details for Spring Security.
+ *
+ * This service fetches user credentials from the database based on the username
+ * and returns a {@link UserDetails} object required for authentication.
+ *
+ * Key Features:
+ * - Retrieves user details from the database using {@link UserCredentialRepository}.
+ * - Throws an exception if the user is not found.
+ * - Logs authentication requests for debugging.
+ *
+ * Usage:
+ * - This service is used by Spring Security during authentication.
+ * - It is automatically picked up due to the {@code @Component} annotation.
+ *
+ * @author Rajnish Raj
+ */
 @Component
 public class CustomUserDetailsService implements UserDetailsService {
     private static final Logger log = LoggerFactory.getLogger(CustomUserDetailsService.class);
@@ -19,6 +38,13 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Autowired
     private UserCredentialRepository repository;
 
+    /**
+     * Loads user details by username for authentication.
+     *
+     * @param username the username of the user trying to authenticate.
+     * @return UserDetails containing authentication details.
+     * @throws UsernameNotFoundException if the user is not found in the database.
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
        log.info("in loadUserByUsername");
