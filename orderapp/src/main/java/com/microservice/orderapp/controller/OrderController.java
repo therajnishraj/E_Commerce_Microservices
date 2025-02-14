@@ -36,13 +36,9 @@ public class OrderController {
     }
 
     @GetMapping("/order/{orderId}/user/{userId}")
-    @CircuitBreaker(name = "userServiceCircuitBreaker", fallbackMethod = "fallbackGetUserDetails")
     public String getOrderAndUserDetails(@PathVariable Long orderId, @PathVariable Long userId) {
         User user = userServiceClient.getUserById(userId); // Calls UserService
         return "Order ID: " + orderId + " belongs to " + user.getName();
     }
 
-    public String fallbackGetUserDetails(Long orderId, Long userId, Throwable throwable) {
-        return "Order ID: " + orderId + " belongs to a default user." ;
-    }
 }
