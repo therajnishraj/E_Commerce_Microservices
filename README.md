@@ -42,6 +42,7 @@ This application is designed using Spring Boot Microservices and includes the fo
 - **PostgreSQL**: Database
 - **Feign Client**: Inter-Service Communication
 - **Resilience4j**: Circuit Breaker & Fallback Handling
+- **Docker & Docker Compose**: Containerization & Deployment
 
 
 ## Project Structure
@@ -55,6 +56,7 @@ This application is designed using Spring Boot Microservices and includes the fo
 - **Spring Boot 3.0+**
 - **PostgreSQL** (for persistence)
 - **Git** (for version control)
+- **Docker & Docker Compose** (for containerization)
 
 ---
 
@@ -65,6 +67,57 @@ cd Microservices
 ```
 
 ---
+## Running with Docker
+
+### **Docker Setup**
+1. **Ensure Docker is installed and running on your machine.**
+2. **Build the Docker images for each microservice:**
+   ```bash
+   docker build -t user-service ./userapp
+   docker build -t order-service ./orderapp
+   docker build -t auth-service ./authapp
+   docker build -t api-gateway ./apigateway
+   docker build -t eureka-server ./eurekaserver
+   ```
+
+3. **Run the services using Docker Compose:**
+   ```bash
+    # Build the images defined in docker-compose.yml
+    docker compose build  
+
+    # Start the containers as per docker-compose.yml (in detached mode if needed: add -d)
+    docker-compose up  
+
+    # Stop and remove containers, networks, and volumes created by docker-compose up
+    docker compose down  
+
+    # List all running and stopped containers
+    docker ps -a  
+
+    # List only running containers
+    docker ps  
+
+    # Remove unused build cache to free up space
+    docker builder prune -a  
+
+    # View logs of a specific container (replace with actual container ID)
+    docker logs 44ed2a3b8ef9  
+
+    # Run a specific container (useful for restarting or testing manually)
+    docker run ecart_microservice-user-service-1  
+
+    # List all Docker images
+    docker images  
+
+    # Remove a specific Docker image (replace with actual image name or ID)
+    docker rmi order-service  
+
+    # Remove a specific stopped container (replace with actual container ID)
+    docker rm 13dabc72b8ae  
+
+   ```
+
+### **Docker Compose File (`docker-compose.yml`)**
 
 ## Configuration
 
