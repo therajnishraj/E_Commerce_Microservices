@@ -110,6 +110,10 @@
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.11.5</version> <!-- Jackson integration (for deserialization) -->
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId> <!--forCircuit breaker-->
+		</dependency>
 	</dependencies>
 
 	<build>
